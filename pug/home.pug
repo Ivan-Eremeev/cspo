@@ -1,0 +1,25 @@
+extends core/base.pug
+
+block title 
+  title Главная
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // welcome
+      .welcome
+        .welcome__bg 
+          img(src="img/welcome.jpg", alt="")
+        .container 
+          h1.welcome__title В январе 2023г. мы запускаем новый облачный сервис по ведению кооперативного документооборота
+          p.welcome__text Кооперативам: регистрируйтесь сейчас <br>и получите год приоритетного обслуживания!
+          .welcome__btn 
+            button.btn.btn--white-border подать заявку
+      // /welcome
+
+    include core/footer.pug

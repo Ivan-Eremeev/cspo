@@ -1,0 +1,43 @@
+/* counter */
+.counter {
+  display: flex;
+  width: 120px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #E1E4EF;
+  border-radius: 6px;
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 100%;
+    cursor: pointer;
+    user-select: none;
+    font-size: 30px;
+    color: #ccc;
+    fill:#ccc;
+    transition: 0.1s;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+    &:hover {
+      fill: blue
+    }
+  }
+  &__input {
+    width: 78px;
+    height: 100%;
+    position: relative;
+    input {
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+      text-align: center;
+      border: none;
+      outline: none;
+    }
+  }
+}
+/* /counter */

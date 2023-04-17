@@ -1,0 +1,66 @@
+/* header */
+.header { 
+  padding: 45px 0;
+  transition: 0.3s;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  &__logo {
+    max-width: 200px;
+  }
+  &__nav {
+    
+  }
+  &__menu {
+    display: flex;
+    margin-left: -32px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    li {
+      margin-left: 32px;
+      a {
+        color: $primary_color;
+        @include media-breakpoint-up(md) {
+          &:hover {
+            color: $secondary_color;
+          }
+        }
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    margin-left: -16px;
+    .btn {
+      padding: 15px 24px;
+      margin-left: 16px;
+    }
+  }
+}
+
+// stiky menu
+#headerSticky {
+  &.sticky {
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: showStyky 0.5s;
+  }
+}
+@keyframes showStyky {
+  0% {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0)
+  }
+}
+/* /header */

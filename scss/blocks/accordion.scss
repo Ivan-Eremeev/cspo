@@ -1,0 +1,13 @@
+/* accordion */
+.accordion { 
+  &__trigger {
+    cursor: pointer;
+    user-select: none;
+  }
+  &__content {
+    &:not(.open) {
+      display: none;
+    }  
+  }
+}
+/* /accordion */

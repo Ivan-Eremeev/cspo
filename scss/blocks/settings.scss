@@ -1,0 +1,50 @@
+/* settings */
+a {
+  transition: .1s;
+  text-decoration: none;
+}
+button,
+input,
+textarea {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 18px;
+}
+body {
+  min-width: 319px;
+  background-color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 18px;
+  &.lock {
+    overflow: hidden;
+  }
+}
+*:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #fff !important;
+}
+*::placeholder {
+  color: #a9a9a9;
+  opacity: 1;
+}
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex-grow: 1;
+  padding-top: 160px;
+}
+.navpage {
+  padding: 100px 0;
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  ul {
+    font-size: 18px;
+    li {
+      margin: 10px 0;
+    }
+  }
+}
+/* /settings */

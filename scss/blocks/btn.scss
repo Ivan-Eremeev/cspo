@@ -1,0 +1,52 @@
+/* btn */
+.btn { 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  outline: none;
+  border: 1px solid transparent;
+  padding: 23px 48px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+  background-color: transparent;
+  &--green {
+    background-color: $secondary_color;
+    color: #fff;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        background-color: $secondary_color_hover;
+      }
+    }
+  }
+  &--green-border {
+    border-color: $secondary_color;
+    color: $secondary_color;
+    background-color: #fff;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        background-color: $secondary_color;
+        color: #fff;
+      }
+    }
+  }
+  &--white-border {
+    border-color: #fff;
+    color: #fff;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        border-color: $secondary_color;
+        background-color: $secondary_color;
+        color: #fff;
+      }
+    }
+  }
+}
+/* /btn */
