@@ -12,7 +12,7 @@ block content
     .content 
 
       // welcome
-      .welcome
+      section.welcome
         .welcome__bg 
           img(src="img/welcome.jpg", alt="")
         .container 
@@ -21,5 +21,34 @@ block content
           .welcome__btn 
             button.btn.btn--white-border подать заявку
       // /welcome
+
+      // statistics
+      section.statistics
+        .container 
+          .statistics__head 
+            .row 
+              .col-md-6 
+                h2.statistics__title Основная цель ЦСПО —  Экономический подъем страны за счет использования возможностей кооперации
+              .col-md-6 
+                .statistics__subtitle Задачи ЦСПО:
+                ul.statistics__list 
+                  li Защита социально-ориентированного кооперативного бизнеса
+                  li Организация сотрудничества между кооперативами
+                  li Создание института Общественно-потребительского заказа
+          .statistics__items 
+            .row 
+              .col-md-4 
+                .statistics__item 
+                  .statistics__num &#62;23 000
+                  .statistics__text Кооперативов уже зарегистировались в нашей системе
+              .col-md-4 
+                .statistics__item 
+                  .statistics__num +25%
+                  .statistics__text В среднем выигрывают кооперативы от сотрудничества с нами
+              .col-md-4 
+                .statistics__item 
+                  .statistics__num ~15 мин
+                  .statistics__text Занимает процесс регистрации и первичной консультации
+      // /statistics
 
     include core/footer.pug

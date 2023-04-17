@@ -6178,6 +6178,7 @@ input,
 textarea {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 18px;
+  color: #333;
 }
 
 body {
@@ -6185,6 +6186,7 @@ body {
   background-color: #fff;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 18px;
+  color: #333;
 }
 body.lock {
   overflow: hidden;
@@ -6332,6 +6334,9 @@ body.lock {
 .header__logo {
   max-width: 200px;
 }
+.header__nav {
+  margin: 0 20px;
+}
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6347,6 +6352,7 @@ body.lock {
   margin-left: 32px;
 }
 .header__menu li a {
+  white-space: nowrap;
   color: #325285;
 }
 @media (min-width: 768px) {
@@ -6373,6 +6379,8 @@ body.lock {
   width: 100%;
   -webkit-animation: showStyky 0.5s;
   animation: showStyky 0.5s;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 @-webkit-keyframes showStyky {
@@ -6403,6 +6411,7 @@ body.lock {
   position: relative;
   color: #fff;
   text-align: center;
+  margin-bottom: 120px;
 }
 .welcome__bg {
   position: absolute;
@@ -6430,5 +6439,62 @@ body.lock {
   margin-bottom: 48px;
 }
 /* /welcome */
+/* statistics */
+.statistics {
+  margin-bottom: 120px;
+}
+.statistics__head {
+  margin-bottom: 103px;
+}
+.statistics__title {
+  max-width: 550px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #325285;
+}
+.statistics__subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.statistics__list {
+  font-size: 18px;
+  line-height: 28px;
+}
+.statistics__list li {
+  padding-left: 35px;
+  margin: 16px 0;
+  position: relative;
+}
+.statistics__list li:before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 1px;
+  background-color: #333;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.statistics__item {
+  border-top: 1px solid #40B3A2;
+  border-bottom: 1px solid #E9E9E9;
+  padding: 32px 0;
+}
+.statistics__num {
+  font-size: 80px;
+  line-height: 80px;
+  color: #325285;
+  margin-bottom: 32px;
+}
+.statistics__text {
+  max-width: 290px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* /statistics */
 /* footer */
 /* /footer */

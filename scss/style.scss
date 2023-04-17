@@ -154,6 +154,7 @@ $primary_color: #325285;
 $primary_color_hover: #4887B0;
 $secondary_color: #40B3A2;
 $secondary_color_hover: #85CDCA;
+$border_color: #E9E9E9;
 
 // Подключение файлов
 @import 'blocks/settings';
@@ -167,6 +168,7 @@ $secondary_color_hover: #85CDCA;
 @import 'blocks/btn';
 @import 'blocks/header';
 @import 'blocks/welcome';
+@import 'blocks/statistics';
 
 @import 'blocks/footer';
 // @import 'blocks/menu';

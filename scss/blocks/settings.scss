@@ -8,12 +8,14 @@ input,
 textarea {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 18px;
+  color: $text_color;
 }
 body {
   min-width: 319px;
   background-color: #fff;
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 18px;
+  color: $text_color;
   &.lock {
     overflow: hidden;
   }
