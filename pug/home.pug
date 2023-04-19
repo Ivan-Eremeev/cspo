@@ -116,4 +116,56 @@ block content
                   +team-item('img/team/img6.jpg','Семен максимов','Ведущий аналитик, бизнес-консультант, ')
       // /team
 
+      // develop
+      section.develop
+        .container 
+          h2.title Планы развития:
+          .develop__item 
+            .row 
+              .col-md-6 
+                .develop__img 
+                  img(src="img/develop/img1.jpg", alt="")
+              .col-md-6 
+                .develop__content 
+                  h3.develop__title Этап 1
+                  .develop__date Январь, 2023
+                  .develop__text 
+                    p Запуск облачного сервиса с поддержкой функций:
+                    ul 
+                      li Создание и ведение ЭЦП клиентов кооперативов
+                      li Документооборот как сервис
+                  .develop__btn 
+                    button.btn.btn--green-border стать резидентом
+          .develop__item 
+            .row 
+              .col-md-6.order-2
+                .develop__img 
+                  img(src="img/develop/img2.jpg", alt="")
+              .col-md-6.order-1
+                .develop__content 
+                  h3.develop__title Этап 2
+                  .develop__date Март, 2023
+                  .develop__text 
+                    ul 
+                      li Запуск бухгалтерского сервиса
+                      li Проведение стандартных кооперативных операций
+                      li Экспорт в 1С и другие системы
+                  .develop__btn 
+                    button.btn.btn--green-border стать резидентом
+          .develop__item 
+            .row 
+              .col-md-6 
+                .develop__img 
+                  img(src="img/develop/img3.jpg", alt="")
+              .col-md-6 
+                .develop__content 
+                  h3.develop__title Этап 3
+                  .develop__date Июнь, 2023
+                  .develop__text 
+                    ul 
+                      li Запуск системы кооперативных взаиморасчетов на базе современных блокчейн- технологий
+                  .develop__btn 
+                    button.btn.btn--green-border стать резидентом
+      // /develop
+
     include core/footer.pug
