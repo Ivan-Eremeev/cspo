@@ -1,10 +1,15 @@
 /* benefit */
 .benefit { 
+  margin-bottom: 120px;
   .title {
     margin-bottom: 80px;
   }
   &__item {
-    padding: 48px 0;
+    padding: 47px 0;
+    border-top: 1px solid $border_color;
+    &:last-child {
+      border-bottom: 1px solid $border_color;
+    }
   }
   &__title {
     font-weight: 500;

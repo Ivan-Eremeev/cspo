@@ -216,4 +216,44 @@ block content
                 p.benefit__text Платформа для финансовых взаиморасчетов между кооперативами
       // /benefit
 
+      // news
+      section.news
+        .container 
+          .news__head 
+            h2.news__title Новости:
+            a(href="#").news__more Все новости
+          .news__items 
+            .row
+              .col-md-4 
+                .news__item 
+                  a(href="#").news__img 
+                    img(src="img/news/img1.jpg", alt="")
+                  .news__date 01 декабря 2022 года
+                  .news__subtitle 
+                    a(href="#") Сублимированный анализ зарубежного опыта
+                  p.news__text Рекламный блок, суммируя приведенные примеры, недостаточно специфицирует фирменный фирменный стиль. 
+                  .news__btn 
+                    a(href="#").btn.btn--white-border подробнее
+              .col-md-4 
+                .news__item 
+                  a(href="#").news__img 
+                    img(src="img/news/img2.jpg", alt="")
+                  .news__date 01 декабря 2022 года
+                  .news__subtitle 
+                    a(href="#") Почему недостижимо привлечение аудитории?
+                  p.news__text Потребление стабилизирует conversion rate. Дело в том, что имидж пока плохо обуславливает популярный нестандартный подход.
+                  .news__btn 
+                    a(href="#").btn.btn--white-border подробнее
+              .col-md-4 
+                .news__item 
+                  a(href="#").news__img 
+                    img(src="img/news/img3.jpg", alt="")
+                  .news__date 01 декабря 2022 года
+                  .news__subtitle 
+                    a(href="#") Комплексный фирменный стиль — актуальная национальная задача
+                  p.news__text Взаимодействие корпорации и клиента отталкивает побочный PR-эффект.
+                  .news__btn 
+                    a(href="#").btn.btn--white-border подробнее
+      // /news
+
     include core/footer.pug
