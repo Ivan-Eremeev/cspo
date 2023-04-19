@@ -8,6 +8,7 @@ input,
 textarea {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 18px;
+  line-height: 28px;
   color: $text_color;
 }
 body {
@@ -15,6 +16,7 @@ body {
   background-color: #fff;
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 18px;
+  line-height: 28px;
   color: $text_color;
   &.lock {
     overflow: hidden;

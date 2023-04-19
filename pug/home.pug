@@ -51,4 +51,69 @@ block content
                   .statistics__text Занимает процесс регистрации и первичной консультации
       // /statistics
 
+      // services
+      section.services
+        .container 
+          .services__head 
+            h2.title что мы предлагаем Кооперативам:
+            .services__controll 
+              .services__arrow.services__arrow--prev 
+                svg(class="icon-arrow-long-right")
+                  use(xlink:href="img/sprite.svg#arrow-long-right")
+              .services__arrow.services__arrow--next 
+                svg(class="icon-arrow-long-right")
+                  use(xlink:href="img/sprite.svg#arrow-long-right")
+          .services__slider 
+            #sliderServices 
+              .swiper-wrapper 
+                .swiper-slide 
+                  mixin services-item(imgUrl, title, text)
+                    .services__item 
+                      a(href="#").services__img 
+                        img(src= imgUrl, alt="")
+                      h3.services__title 
+                        a(href="#")!= title
+                      p.services__text= text
+                      .services__btn 
+                        a(href="#").btn.btn--green-border подробнее
+                  +services-item('img/services/img1.jpg', 'Помощь с ноля в создании и запуске Потребительской кооперации', 'Покупаем участок в одном из СНТ Новой Москвы в пешей доступности от метро. Размежевываем участок на 3 части. На каждом участке строим дом 100 кв.м. с отделкой White Box.')
+                .swiper-slide 
+                  +services-item('img/services/img2.jpg', 'Обучение кооперации', 'Покупаем участок в одном из СНТ Новой Москвы в пешей доступности от метро. Размежевываем участок на 3 части. На каждом участке строим дом 100 кв.м. с отделкой White Box.')
+                .swiper-slide 
+                  +services-item('img/services/img3.jpg', 'Юридическая помощь', 'Покупаем участок в одном из СНТ Новой Москвы в пешей доступности от метро. Размежевываем участок на 3 части. На каждом участке строим дом 100 кв.м. с отделкой White Box.')
+                .swiper-slide 
+                  +services-item('img/services/img4.jpg', 'Бухгалтерская помощь / Бухгалтерия на аутсорсинге', 'Покупаем участок в одном из СНТ Новой Москвы в пешей доступности от метро. Размежевываем участок на 3 части. На каждом участке строим дом 100 кв.м. с отделкой White Box.')
+                .swiper-slide 
+                  +services-item('img/services/img5.jpg', 'Помощь в ведении документооборота', 'Покупаем участок в одном из СНТ Новой Москвы в пешей доступности от метро. Размежевываем участок на 3 части. На каждом участке строим дом 100 кв.м. с отделкой White Box.')
+                .swiper-slide 
+                  +services-item('img/services/img6.jpg', 'Защита перед государственными структурами', 'Покупаем участок в одном из СНТ Новой Москвы в пешей доступности от метро. Размежевываем участок на 3 части. На каждом участке строим дом 100 кв.м. с отделкой White Box.')
+      // /services
+
+      // team
+      section.team
+        .container 
+          h2.title Наша команда:
+          .team__slider 
+            #sliderTeam 
+              .swiper-wrapper 
+                .swiper-slide 
+                  mixin team-item(img, title, text)
+                    .team__item 
+                      .team__img 
+                        img(src= img, alt="")
+                      h3.team__title= title
+                      p.team__text= text
+                  +team-item('img/team/img1.jpg','Андрей Пивоваров','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img2.jpg','Сергей гаврилов','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img3.jpg','Марк Семеницкий','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img4.jpg','Маргарита Смирнова','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img5.jpg','Вероника Иванова','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img6.jpg','Семен максимов','Ведущий аналитик, бизнес-консультант, ')
+      // /team
+
     include core/footer.pug

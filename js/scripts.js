@@ -8,7 +8,7 @@ window.onload = function () {
       headerToggleClass();
     });
     function headerToggleClass() {
-      if ($(window).scrollTop() > headerTop + 130) {
+      if ($(window).scrollTop() > headerTop + 200) {
         header.addClass('sticky');
       } else if ($(window).scrollTop() <= headerTop) {
         header.removeClass('sticky');
@@ -35,6 +35,50 @@ window.onload = function () {
   //     },
   //   });
   // }
+
+  // Swiper | Слайдер "услуги"
+  if ($('#sliderServices').length) {
+    const sliderServices = new Swiper('#sliderServices', {
+      slidesPerView: 2,
+      spaceBetween: 60,
+    });
+    $('.services__arrow--prev').on('click', function () {
+      sliderServices.slidePrev();
+    });
+    $('.services__arrow--next').on('click', function () {
+      sliderServices.slideNext();
+    });
+  }
+
+  // Swiper | Слайдер "команда"
+  if ($('#sliderTeam').length) {
+    let sliderTeam;
+    let init = false;
+    function sliderToggle() {
+      if ($(window).width() <= 768 && !init) {
+        init = true;
+        sliderTeam = new Swiper('#sliderTeam', {
+          slidesPerView: 1.2,
+          spaceBetween: 60,
+          speed: 1000,
+          pagination: false,
+          navigation: false,
+          breakpoints: {
+            576: {
+              slidesPerView: 2,
+            }
+          }
+        });
+      } else if ($(window).width() > 768 && init) {
+        init = false;
+        sliderTeam.destroy();
+      }
+    };
+    sliderToggle();
+    $(window).resize(function () {
+      sliderToggle();
+    });
+  }
 
   // // Air Datepicker | Календарь
   // new AirDatepicker('#airDatepicker', {
