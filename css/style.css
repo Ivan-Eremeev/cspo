@@ -6528,6 +6528,8 @@ body.lock {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 .services__head {
   margin-bottom: 80px;
@@ -6538,6 +6540,12 @@ body.lock {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  fill: #40B3A2;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 .services__arrow svg {
   width: 48px;
@@ -6550,6 +6558,9 @@ body.lock {
 }
 .services__arrow--next {
   margin-left: 32px;
+}
+.services__arrow:hover {
+  fill: #333;
 }
 .services__slider {
   -webkit-user-select: none;
@@ -6582,6 +6593,15 @@ body.lock {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+@media (min-width: 768px) {
+  .services__img:hover img {
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+  }
 }
 .services__title {
   font-weight: 700;
@@ -6592,6 +6612,9 @@ body.lock {
 }
 .services__title a {
   color: #333;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 @media (min-width: 768px) {
   .services__title a:hover {
