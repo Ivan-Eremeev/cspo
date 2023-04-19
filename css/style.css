@@ -6733,5 +6733,18 @@ body.lock {
   left: 10px;
 }
 /* /develop */
+/* benefit */
+.benefit .title {
+  margin-bottom: 80px;
+}
+.benefit__item {
+  padding: 48px 0;
+}
+.benefit__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+/* /benefit */
 /* footer */
 /* /footer */
