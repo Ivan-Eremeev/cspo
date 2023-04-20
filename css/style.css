@@ -6363,6 +6363,9 @@ body.lock {
 .header__menu li {
   margin-left: 32px;
 }
+.header__menu li.active a {
+  color: #40B3A2;
+}
 .header__menu li a {
   white-space: nowrap;
   color: #325285;
@@ -6847,4 +6850,107 @@ body.lock {
 
 /* /news */
 /* footer */
+.footer {
+  padding: 48px 0 96px;
+  background-color: #325285;
+  color: #fff;
+}
+.footer__top {
+  padding: 44px 0;
+  border-top: 1px solid #E9E9E9;
+  border-bottom: 1px solid #E9E9E9;
+}
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer__menu li {
+  margin-left: 20px;
+}
+.footer__menu li.active a {
+  color: #4887B0;
+}
+.footer__menu li a {
+  color: #fff;
+  white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .footer__menu li a:hover {
+    color: #4887B0;
+  }
+}
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -22px;
+}
+.footer__social a {
+  padding: 5px;
+  margin-left: 22px;
+  fill: #fff;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.footer__social a svg {
+  display: block;
+  max-width: 14px;
+  max-height: 14px;
+}
+@media (min-width: 768px) {
+  .footer__social a:hover {
+    fill: #4887B0;
+  }
+}
+.footer__bottom {
+  padding: 33px 0;
+  border-bottom: 1px solid #E9E9E9;
+}
+.footer__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+.footer__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -38px;
+}
+.footer__list {
+  width: 50%;
+  margin-top: 38px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+.footer__list li {
+  margin: 14px 0;
+}
+.footer__list li:first-child {
+  margin-top: 0;
+}
+.footer__list li:last-child {
+  margin-bottom: 0;
+}
+.footer__list li a {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .footer__list li a:hover {
+    color: #4887B0;
+  }
+}
+
 /* /footer */

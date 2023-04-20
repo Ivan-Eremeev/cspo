@@ -1,4 +1,56 @@
 // footer
 footer.footer
-  
+  .container 
+    .footer__top 
+      .row 
+        .col-md-4
+          a.footer__logo(href="#") 
+            img(src="img/logo-white.svg", alt="")
+        .col-md-8.d-flex.justify-content-between.align-items-center
+          nav.footer__nav 
+            ul.footer__menu 
+              li.active
+                a(href="#") О проекте
+              li 
+                a(href="#") программы
+              li 
+                a(href="#") услуги
+              li 
+                a(href="#") новости
+              li 
+                a(href="#") Контакты
+          .footer__social 
+            a(href="#") 
+              svg(class="icon-fb")
+                use(xlink:href="img/sprite.svg#fb")
+            a(href="#") 
+              svg(class="icon-vk")
+                use(xlink:href="img/sprite.svg#vk")
+            a(href="#") 
+              svg(class="icon-tw")
+                use(xlink:href="img/sprite.svg#tw")
+            a(href="#") 
+              svg(class="icon-insta")
+                use(xlink:href="img/sprite.svg#insta")
+    .footer__bottom 
+      .row 
+        .col-md-4 
+          .footer__text 2022 ЦСПО МЕЖРЕГИОНРЕСУРС
+        .col-md-6 
+          .footer__lists 
+            ul.footer__list 
+              li 
+                a(href="#") Пользовательское соглашение
+              li 
+                a(href="#") О персональных данных
+            ul.footer__list 
+              li 
+                a(href="#") Политика конфиденциальности
+              li 
+                a(href="#") Обработка файлов cookies
+            ul.footer__list 
+              li 
+                span ИНН 560900611501
+              li 
+                span ОГРНИП 319565800029364
 //	/footer

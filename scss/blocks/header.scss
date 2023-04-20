@@ -24,6 +24,11 @@
     text-transform: uppercase;
     li {
       margin-left: 32px;
+      &.active {
+        a {
+          color: $secondary_color;
+        }
+      }
       a {
         white-space: nowrap;
         color: $primary_color;
