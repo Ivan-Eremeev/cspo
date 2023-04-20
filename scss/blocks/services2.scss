@@ -44,5 +44,50 @@
   &__btn {
     margin-top: auto;
   }
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 80px;
+    .title {
+      margin-bottom: 60px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 60px;
+    .title {
+      margin-bottom: 40px;
+    }
+    &__items {
+      .row {
+        margin-top: -50px;
+        > * {
+          margin-top: 50px;
+        }
+      }
+    }
+    &__title {
+      max-width: 220px;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+    &__icon {
+      height: 100px;
+      margin-bottom: 20px;
+      img {
+        max-width: 90px;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__item {
+      text-align: center;
+    }
+    &__title {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__title {
+      text-align: center;
+    }
+  }
 }
 /* /services2 */

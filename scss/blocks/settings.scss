@@ -10,6 +10,10 @@ textarea {
   font-size: 18px;
   line-height: 28px;
   color: $text_color;
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 body {
   min-width: 319px;
@@ -20,6 +24,10 @@ body {
   color: $text_color;
   &.lock {
     overflow: hidden;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 *:-webkit-autofill {
@@ -37,6 +45,9 @@ body {
 .content {
   flex-grow: 1;
   padding-top: 160px;
+  @include media-breakpoint-down(md) {
+    padding-top: 70px;
+  }
 }
 .navpage {
   padding: 100px 0;
@@ -48,6 +59,24 @@ body {
     font-size: 18px;
     li {
       margin: 10px 0;
+    }
+  }
+}
+.row {
+  @include media-breakpoint-down(xl) {
+    margin-left: -15px;
+    margin-right: -15px;
+    > * {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-left: -10px;
+    margin-right: -10px;
+    > * {
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }

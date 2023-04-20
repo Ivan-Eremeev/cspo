@@ -8,8 +8,17 @@
   left: 0;
   z-index: 10;
   background-color: #fff;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__logo {
     max-width: 200px;
+    flex-shrink: 0;
+    img {
+      display: block;
+    }
   }
   &__nav {
     margin: 0 20px;
@@ -48,18 +57,136 @@
       margin-left: 16px;
     }
   }
+  .hamburger {
+    display: none;
+  }
+  &__close {
+    display: none;
+  }
+  @include media-breakpoint-down(xl) {
+    padding: 30px 0;
+    &__container {
+      flex-wrap: wrap;
+    }
+    &__logo {
+      max-width: 150px;
+    }
+    &__nav {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 30px;
+      order: 1;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 15px 0;
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+      padding: 70px 40px 40px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: -800px;
+      background-color: $primary_color;
+      margin-top: 0;
+      transition: 0.5s;
+      z-index: 10;
+      &.open {
+        left: 0;
+      }
+    }
+    &__menu {
+      display: block;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      overflow-y: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+      li {
+        a {
+          display: block;
+          padding: 10px 0;
+          color: #fff;
+        }
+      }
+    }
+    &__buttons {
+      display: block;
+      margin-left: 0;
+      margin-top: auto;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      .btn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+    &__logo {
+      max-width: 120px;
+    }
+    .hamburger {
+      display: block;
+      padding-right: 0;
+      .hamburger-box {
+        display: block;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__nav {
+      max-width: none;
+    }
+    &__close {
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      &:after,&:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      &:after {
+        transform: translate(-50%,-50%) rotate(45deg);
+      }
+      &:before {
+        transform: translate(-50%,-50%) rotate(-45deg);
+      }
+    }
+  }
 }
 
 // stiky menu
 #headerSticky {
   &.sticky {
-    padding: 10px 0;
+    padding: 10px 0 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     animation: showStyky 0.5s;
     box-shadow: 0 0 20px rgba(0,0,0,.3);
+    .header__nav {
+      margin-top: 15px;
+    }
   }
 }
 @keyframes showStyky {

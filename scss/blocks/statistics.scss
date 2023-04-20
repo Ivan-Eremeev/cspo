@@ -40,6 +40,7 @@
     
   }
   &__item {
+    height: 100%;
     border-top: 1px solid $secondary_color;
     border-bottom: 1px solid $border_color;
     padding: 32px 0;
@@ -54,6 +55,51 @@
     max-width: 290px;
     font-size: 14px;
     line-height: 20px;
+  }
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 80px;
+    &__head {
+      margin-bottom: 80px;
+    }
+    &__title {
+      font-size: 28px;
+      line-height: 40px;
+    }
+    &__num {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 60px;
+    &__head {
+      margin-bottom: 50px;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 30px;
+    }
+    &__item {
+      padding: 25px 0;
+      text-align: center;
+    }
+    &__text {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 26px;
+    }
+    &__list {
+      font-size: 16px;
+      line-height: 26px;
+    }
+    &__num {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
   }
 }
 /* /statistics */

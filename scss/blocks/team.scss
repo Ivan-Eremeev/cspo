@@ -44,5 +44,46 @@
   &__text {
     
   }
+  @include media-breakpoint-down(xl) {
+    .title {
+      margin-bottom: 60px;
+    }
+    &__img {
+      height: 290px;
+    }
+    &__slider {
+      .swiper-wrapper {
+        margin-left: -15px;
+        margin-left: -15px;
+      }
+      .swiper-slide {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .title {
+      margin-bottom: 40px;
+    }
+    &__slider {
+      .swiper-wrapper {
+        margin-left: 0;
+        margin-left: 0;
+      }
+      .swiper-slide {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    &__img {
+      margin-bottom: 25px;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+  }
 }
 /* /team */

@@ -48,5 +48,8 @@
       }
     }
   }
+  @include media-breakpoint-down(md) {
+    padding: 18px 30px;
+  }
 }
 /* /btn */

@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     flex-shrink: 0;
+    margin-left: 20px;
   }
   &__head {
     margin-bottom: 80px;
@@ -89,6 +90,41 @@
     margin-top: auto;
     .btn {
 
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 80px;
+    &__head {
+      margin-bottom: 60px;
+    }
+    &__img {
+      height: 410px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__img {
+      height: 300px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 60px;
+    &__head {
+      margin-bottom: 40px;
+    }
+    &__img {
+      height: 220px;
+      margin-bottom: 25px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 15px;
+    }
+    &__controll {
+      display: none;
+    }
+    &__text {
+      margin-bottom: 25px;
     }
   }
 }

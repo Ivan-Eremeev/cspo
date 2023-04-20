@@ -2,11 +2,11 @@
 footer.footer
   .container 
     .footer__top 
-      .row 
-        .col-md-4
+      .row.justify-content-md-between
+        .col-lg-4.col-md-auto
           a.footer__logo(href="#") 
             img(src="img/logo-white.svg", alt="")
-        .col-md-8.d-flex.justify-content-between.align-items-center
+        .col-lg-8.col-md-auto.d-flex.justify-content-between.align-items-center
           nav.footer__nav 
             ul.footer__menu 
               li.active
@@ -19,7 +19,7 @@ footer.footer
                 a(href="#") новости
               li 
                 a(href="#") Контакты
-          .footer__social 
+          .footer__social.d-none.d-xl-flex
             a(href="#") 
               svg(class="icon-fb")
                 use(xlink:href="img/sprite.svg#fb")
@@ -33,10 +33,23 @@ footer.footer
               svg(class="icon-insta")
                 use(xlink:href="img/sprite.svg#insta")
     .footer__bottom 
-      .row 
-        .col-md-4 
+      .row.gy-1
+        .col-lg-4 
           .footer__text 2022 ЦСПО МЕЖРЕГИОНРЕСУРС
-        .col-md-6 
+          .footer__social.d-flex.d-xl-none
+            a(href="#") 
+              svg(class="icon-fb")
+                use(xlink:href="img/sprite.svg#fb")
+            a(href="#") 
+              svg(class="icon-vk")
+                use(xlink:href="img/sprite.svg#vk")
+            a(href="#") 
+              svg(class="icon-tw")
+                use(xlink:href="img/sprite.svg#tw")
+            a(href="#") 
+              svg(class="icon-insta")
+                use(xlink:href="img/sprite.svg#insta")
+        .col-lg-8.col-xl-6
           .footer__lists 
             ul.footer__list 
               li 

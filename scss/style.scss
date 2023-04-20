@@ -8,7 +8,7 @@ $grid-columns: 12; // Колличество колонок
 $grid-breakpoints: ( // Брейкпоинты
   xs: 0,
   sm: 576px,
-  md: 768px,
+  md: 769px,
   lg: 992px,
   xl: 1200px,
   xxl: 1400px
@@ -158,7 +158,7 @@ $border_color: #E9E9E9;
 
 // Подключение файлов
 @import 'blocks/settings';
-// @import 'hamburgers/hamburgers';
+@import 'hamburgers/hamburgers';
 // @import 'blocks/template';
 // @import 'blocks/popup';
 // @import 'blocks/tabs';

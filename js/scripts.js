@@ -39,8 +39,18 @@ window.onload = function () {
   // Swiper | Слайдер "услуги"
   if ($('#sliderServices').length) {
     const sliderServices = new Swiper('#sliderServices', {
-      slidesPerView: 2,
-      spaceBetween: 60,
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+      breakpoints: {
+        1140: {
+          slidesPerView: 2,
+          spaceBetween: 60,
+        },
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        }
+      }
     });
     $('.services__arrow--prev').on('click', function () {
       sliderServices.slidePrev();
@@ -59,13 +69,18 @@ window.onload = function () {
         init = true;
         sliderTeam = new Swiper('#sliderTeam', {
           slidesPerView: 1.2,
-          spaceBetween: 60,
+          spaceBetween: 20,
           speed: 1000,
           pagination: false,
           navigation: false,
           breakpoints: {
+            769: {
+              slidesPerView: 2,
+              spaceBetween: 60,
+            },
             576: {
               slidesPerView: 2,
+              spaceBetween: 30,
             }
           }
         });
@@ -291,51 +306,51 @@ window.onload = function () {
   //   });
   // };
 
-  // // Выпадайки при клике по кнопке
-  // // Задать блокам выпадайкам айдишник совпадающий с data-drop="" в кнопке для этого блока
-  // // Задать кнопкам .js-drop-btn и data-drop="" с айдишником блока выпадайки
-  // function dropBlock(btn, lock = false) {
-  //   let $this = undefined,
-  //       drop = undefined,
-  //       close = $('.js-drop-close'),
-  //       body = $('body');
-  //   btn.on('click', function () {
-  //     let $this = $(this);
-  //     let drop = $('#' + $this.data('drop'));
-  //     let scrollWidth = (window.innerWidth - $(window).width());
-  //     if (!$this.hasClass('is-active')) {
-  //       $this.addClass('is-active');
-  //       drop.addClass('open');
-  //       if (lock) {
-  //         body.toggleClass('lock');
-  //         body.css('padding-right', scrollWidth);
-  //       }
-  //     } else {
-  //       $this.removeClass('is-active');
-  //       drop.removeClass('open');
-  //       body.removeClass('lock');
-  //       body.css('padding-right', 0);
-  //     }
-  //     $(document).mouseup(function (e) {
-  //       if (!$this.is(e.target)
-  //         && $this.has(e.target).length === 0
-  //         && !drop.is(e.target)
-  //         && drop.has(e.target).length === 0) {
-  //         $this.removeClass('is-active');
-  //         drop.removeClass('open');
-  //         body.removeClass('lock');
-  //         body.css('padding-right', 0);
-  //       }
-  //     });
-  //   })
-  //   close.on('click', function () {
-  //     $('[data-drop="' + $(this).data('drop') +'"]').removeClass('is-active');
-  //     $('#' + $(this).data('drop')).removeClass('open');
-  //     body.removeClass('lock');
-  //     body.css('padding-right', 0);
-  //   })
-  // }
-  // dropBlock($('.js-drop-btn'));
-  // dropBlock($('.js-drop-menu'), true);
+  // Выпадайки при клике по кнопке
+  // Задать блокам выпадайкам айдишник совпадающий с data-drop="" в кнопке для этого блока
+  // Задать кнопкам .js-drop-btn и data-drop="" с айдишником блока выпадайки
+  function dropBlock(btn, lock = false) {
+    let $this = undefined,
+        drop = undefined,
+        close = $('.js-drop-close'),
+        body = $('body');
+    btn.on('click', function () {
+      let $this = $(this);
+      let drop = $('#' + $this.data('drop'));
+      let scrollWidth = (window.innerWidth - $(window).width());
+      if (!$this.hasClass('is-active')) {
+        $this.addClass('is-active');
+        drop.addClass('open');
+        if (lock) {
+          body.toggleClass('lock');
+          body.css('padding-right', scrollWidth);
+        }
+      } else {
+        $this.removeClass('is-active');
+        drop.removeClass('open');
+        body.removeClass('lock');
+        body.css('padding-right', 0);
+      }
+      $(document).mouseup(function (e) {
+        if (!$this.is(e.target)
+          && $this.has(e.target).length === 0
+          && !drop.is(e.target)
+          && drop.has(e.target).length === 0) {
+          $this.removeClass('is-active');
+          drop.removeClass('open');
+          body.removeClass('lock');
+          body.css('padding-right', 0);
+        }
+      });
+    })
+    close.on('click', function () {
+      $('[data-drop="' + $(this).data('drop') +'"]').removeClass('is-active');
+      $('#' + $(this).data('drop')).removeClass('open');
+      body.removeClass('lock');
+      body.css('padding-right', 0);
+    })
+  }
+  dropBlock($('.js-drop-btn'));
+  dropBlock($('.js-drop-menu'), true);
 
 }

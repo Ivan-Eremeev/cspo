@@ -26,7 +26,7 @@ block content
       section.statistics
         .container 
           .statistics__head 
-            .row 
+            .row.gy-1 
               .col-md-6 
                 h2.statistics__title Основная цель ЦСПО —  Экономический подъем страны за счет использования возможностей кооперации
               .col-md-6 
@@ -95,7 +95,7 @@ block content
           h2.title Что мы предлагаем Кооперативам:
           .services2__items 
             .row
-              .col-md-4 
+              .col-lg-4.col-sm-6
                 mixin services2-item(icon, title)
                   .services2__item 
                     a(href="#").services2__icon 
@@ -105,15 +105,15 @@ block content
                     .services2__btn 
                       a(href="#").btn.btn--green-border подробнее
                 +services2-item('img/services-icon-1.svg','Помощь с ноля в создании и запуске Потребительской кооперации')
-              .col-md-4 
+              .col-lg-4.col-sm-6
                 +services2-item('img/services-icon-2.svg','Обучение кооперации')
-              .col-md-4 
+              .col-lg-4.col-sm-6
                 +services2-item('img/services-icon-3.svg','Юридическая помощь')
-              .col-md-4 
+              .col-lg-4.col-sm-6
                 +services2-item('img/services-icon-4.svg','Бухгалтерская помощь / Бухгалтерия на аутсорсинге')
-              .col-md-4 
+              .col-lg-4.col-sm-6
                 +services2-item('img/services-icon-5.svg','Помощь в ведении документооборота')
-              .col-md-4 
+              .col-lg-4.col-sm-6
                 +services2-item('img/services-icon-6.svg','Защита перед государственными структурами')
       // /services2
 
@@ -149,7 +149,7 @@ block content
         .container 
           h2.title Планы развития:
           .develop__item 
-            .row 
+            .row.gy-1
               .col-md-6 
                 .develop__img 
                   img(src="img/develop/img1.jpg", alt="")
@@ -165,8 +165,8 @@ block content
                   .develop__btn 
                     button.btn.btn--green-border стать резидентом
           .develop__item 
-            .row 
-              .col-md-6.order-2
+            .row.gy-1
+              .col-md-6.order-md-2.order-0
                 .develop__img 
                   img(src="img/develop/img2.jpg", alt="")
               .col-md-6.order-1
@@ -181,7 +181,7 @@ block content
                   .develop__btn 
                     button.btn.btn--green-border стать резидентом
           .develop__item 
-            .row 
+            .row.gy-1
               .col-md-6 
                 .develop__img 
                   img(src="img/develop/img3.jpg", alt="")
@@ -251,8 +251,8 @@ block content
             h2.news__title Новости:
             a(href="#").news__more Все новости
           .news__items 
-            .row
-              .col-md-4 
+            .row.gy-2
+              .col-sm-6.col-lg-4
                 .news__item 
                   a(href="#").news__img 
                     img(src="img/news/img1.jpg", alt="")
@@ -262,7 +262,7 @@ block content
                   p.news__text Рекламный блок, суммируя приведенные примеры, недостаточно специфицирует фирменный фирменный стиль. 
                   .news__btn 
                     a(href="#").btn.btn--white-border подробнее
-              .col-md-4 
+              .col-sm-6.col-lg-4
                 .news__item 
                   a(href="#").news__img 
                     img(src="img/news/img2.jpg", alt="")
@@ -272,7 +272,7 @@ block content
                   p.news__text Потребление стабилизирует conversion rate. Дело в том, что имидж пока плохо обуславливает популярный нестандартный подход.
                   .news__btn 
                     a(href="#").btn.btn--white-border подробнее
-              .col-md-4 
+              .col-sm-6.col-lg-4
                 .news__item 
                   a(href="#").news__img 
                     img(src="img/news/img3.jpg", alt="")

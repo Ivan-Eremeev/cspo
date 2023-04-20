@@ -12,7 +12,9 @@
     border-bottom: 1px solid $border_color;
   }
   &__logo {
-    
+    display: block;
+    flex-shrink: 0;
+    max-width: 135px;
   }
   &__nav {
     
@@ -99,6 +101,56 @@
           }
         }
       }
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    padding: 40px 0 70px;
+    &__social {
+      margin-top: 20px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    // &__top {
+    //   .row {
+    //     > * {
+    //       width: auto !important;
+    //     }
+    //   }
+    // }
+    &__lists {
+      margin-top: -20px;
+    }
+    &__list {
+      margin-top: 20px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 30px 0 50px;
+    &__top {
+      padding: 30px 0;
+    }
+    &__logo {
+      max-width: 100px;
+    }
+    &__nav {
+      margin-top: 20px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__menu {
+      display: block;
+      li {
+        a {
+          display: block;
+          padding: 10px 0;
+        }
+      }
+    }
+    &__nav {
+      width: 100%;
+    }
+    &__list {
+      width: 100%;
     }
   }
 }

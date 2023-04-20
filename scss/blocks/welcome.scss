@@ -33,5 +33,35 @@
   &__btn {
     
   }
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 80px;
+    &__title {
+      font-size: 46px;
+      line-height: 52px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 100px 0;
+    &__title {
+      font-size: 34px;
+      line-height: 40px;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 60px;
+    padding: 70px 0;
+    &__title {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
 }
 /* /welcome */
