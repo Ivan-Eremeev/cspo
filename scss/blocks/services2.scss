@@ -1,0 +1,48 @@
+/* services2 */
+.services2 { 
+  margin-bottom: 120px;
+  .title {
+    margin-bottom: 80px;
+  }
+  &__items {
+    .row {
+      margin-top: -80px;
+      > * {
+        margin-top: 80px;
+      }
+    }
+  }
+  &__item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__icon {
+    display: block;
+    height: 160px;
+    margin-bottom: 40px;
+    img {
+      max-width: 150px;
+      max-height: 100%;
+    }
+  }
+  &__title {
+    max-width: 270px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    a {
+      color: $text_color;
+      @include media-breakpoint-up(md) {
+        &:hover {
+          color: $secondary_color;
+        }
+      }
+    }
+  }
+  &__btn {
+    margin-top: auto;
+  }
+}
+/* /services2 */

@@ -89,6 +89,34 @@ block content
                   +services-item('img/services/img6.jpg', 'Защита перед государственными структурами', 'Покупаем участок в одном из СНТ Новой Москвы в пешей доступности от метро. Размежевываем участок на 3 части. На каждом участке строим дом 100 кв.м. с отделкой White Box.')
       // /services
 
+      // services2
+      section.services2
+        .container 
+          h2.title Что мы предлагаем Кооперативам:
+          .services2__items 
+            .row
+              .col-md-4 
+                mixin services2-item(icon, title)
+                  .services2__item 
+                    a(href="#").services2__icon 
+                      img(src= icon, alt="")
+                    h3.services2__title 
+                      a(href="#")= title
+                    .services2__btn 
+                      a(href="#").btn.btn--green-border подробнее
+                +services2-item('img/services-icon-1.svg','Помощь с ноля в создании и запуске Потребительской кооперации')
+              .col-md-4 
+                +services2-item('img/services-icon-2.svg','Обучение кооперации')
+              .col-md-4 
+                +services2-item('img/services-icon-3.svg','Юридическая помощь')
+              .col-md-4 
+                +services2-item('img/services-icon-4.svg','Бухгалтерская помощь / Бухгалтерия на аутсорсинге')
+              .col-md-4 
+                +services2-item('img/services-icon-5.svg','Помощь в ведении документооборота')
+              .col-md-4 
+                +services2-item('img/services-icon-6.svg','Защита перед государственными структурами')
+      // /services2
+
       // team
       section.team
         .container 
