@@ -6575,13 +6575,39 @@ body.lock {
 .header__menu li.active a {
   color: #40B3A2;
 }
+@media (min-width: 769px) {
+  .header__menu li.active a:after {
+    width: 100%;
+  }
+}
 .header__menu li a {
+  padding: 16px 0;
   white-space: nowrap;
   color: #325285;
+  position: relative;
+}
+.header__menu li a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #40B3A2;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 @media (min-width: 769px) {
   .header__menu li a:hover {
     color: #40B3A2;
+  }
+  .header__menu li a:hover:after {
+    width: 100%;
   }
 }
 .header__buttons {

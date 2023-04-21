@@ -36,14 +36,36 @@
       &.active {
         a {
           color: $secondary_color;
+          @include media-breakpoint-up(md) {
+            &:after {
+              width: 100%;
+            }
+          }
         }
       }
       a {
+        padding: 16px 0;
         white-space: nowrap;
         color: $primary_color;
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background-color: $secondary_color;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%,0);
+          transition: .3s;
+        }
         @include media-breakpoint-up(md) {
           &:hover {
             color: $secondary_color;
+            &:after {
+              width: 100%;
+            }
           }
         }
       }

@@ -15,7 +15,7 @@ block content
       section.welcome
         .welcome__bg 
           img(src="img/welcome.jpg", alt="")
-        .container 
+        .container(data-aos="fade-up")
           h1.welcome__title В январе 2023г. мы запускаем новый облачный сервис по ведению кооперативного документооборота
           p.welcome__text Кооперативам: регистрируйтесь сейчас <br>и получите год приоритетного обслуживания!
           .welcome__btn 
@@ -27,15 +27,15 @@ block content
         .container 
           .statistics__head 
             .row.gy-1 
-              .col-md-6 
+              .col-md-6(data-aos="fade-up")
                 h2.statistics__title Основная цель ЦСПО —  Экономический подъем страны за счет использования возможностей кооперации
-              .col-md-6 
+              .col-md-6(data-aos="fade-up") 
                 .statistics__subtitle Задачи ЦСПО:
                 ul.statistics__list 
                   li Защита социально-ориентированного кооперативного бизнеса
                   li Организация сотрудничества между кооперативами
                   li Создание института Общественно-потребительского заказа
-          .statistics__items 
+          .statistics__items(data-aos="fade-up")
             .row 
               .col-md-4 
                 .statistics__item 
@@ -55,15 +55,15 @@ block content
       section.services
         .container 
           .services__head 
-            h2.title что мы предлагаем Кооперативам:
-            .services__controll 
+            h2.title(data-aos="fade-right") что мы предлагаем Кооперативам:
+            .services__controll(data-aos="fade-left")
               .services__arrow.services__arrow--prev 
                 svg(class="icon-arrow-long-right")
                   use(xlink:href="img/sprite.svg#arrow-long-right")
               .services__arrow.services__arrow--next 
                 svg(class="icon-arrow-long-right")
                   use(xlink:href="img/sprite.svg#arrow-long-right")
-          .services__slider 
+          .services__slider(data-aos="fade-up") 
             #sliderServices 
               .swiper-wrapper 
                 .swiper-slide 
@@ -92,12 +92,12 @@ block content
       // services2
       section.services2
         .container 
-          h2.title Что мы предлагаем Кооперативам:
+          h2.title(data-aos="fade-up") Что мы предлагаем Кооперативам:
           .services2__items 
             .row
               .col-lg-4.col-sm-6
                 mixin services2-item(icon, title)
-                  .services2__item 
+                  .services2__item(data-aos="fade-up")
                     a(href="#").services2__icon 
                       img(src= icon, alt="")
                     h3.services2__title 
@@ -120,13 +120,13 @@ block content
       // team
       section.team
         .container 
-          h2.title Наша команда:
+          h2.title(data-aos="fade-up") Наша команда:
           .team__slider 
             #sliderTeam 
               .swiper-wrapper 
                 .swiper-slide 
                   mixin team-item(img, title, text)
-                    .team__item 
+                    .team__item(data-aos="fade-up")
                       .team__img 
                         img(src= img, alt="")
                       h3.team__title= title
@@ -147,8 +147,8 @@ block content
       // develop
       section.develop
         .container 
-          h2.title Планы развития:
-          .develop__item 
+          h2.title(data-aos="fade-up") Планы развития:
+          .develop__item(data-aos="fade-left")
             .row.gy-1
               .col-md-6 
                 .develop__img 
@@ -164,7 +164,7 @@ block content
                       li Документооборот как сервис
                   .develop__btn 
                     button.btn.btn--green-border стать резидентом
-          .develop__item 
+          .develop__item(data-aos="fade-right")
             .row.gy-1
               .col-md-6.order-md-2.order-0
                 .develop__img 
@@ -180,7 +180,7 @@ block content
                       li Экспорт в 1С и другие системы
                   .develop__btn 
                     button.btn.btn--green-border стать резидентом
-          .develop__item 
+          .develop__item(data-aos="fade-left")
             .row.gy-1
               .col-md-6 
                 .develop__img 
@@ -199,44 +199,44 @@ block content
       // benefit
       section.benefit
         .container 
-          h2.title в чем основные преимущества нашей платформы:
-          .benefit__item 
+          h2.title(data-aos="fade-up") в чем основные преимущества нашей платформы:
+          .benefit__item(data-aos="fade-up")
             .row 
               .col-md-6 
                 h3.benefit__title Автоматизация
               .col-md-6 
                 p.benefit__text Современный тренд – автоматизация отлаженных бизнес- процессов
-          .benefit__item 
+          .benefit__item(data-aos="fade-up")
             .row 
               .col-md-6 
                 h3.benefit__title Экспертность
               .col-md-6 
                 p.benefit__text Благодаря автоматизации массовый доступ к лучшим экспертам. Нет нужды иметь большой штат делопроизводителей. Экспертная помощь Центрального Союза Потребительских Обществ в решении различных вопросов
-          .benefit__item 
+          .benefit__item(data-aos="fade-up")
             .row 
               .col-md-6 
                 h3.benefit__title Популяризация
               .col-md-6 
                 p.benefit__text Наша задача – популяризация кооперация
-          .benefit__item 
+          .benefit__item(data-aos="fade-up")
             .row 
               .col-md-6 
                 h3.benefit__title Сервис ЭЦП
               .col-md-6 
                 p.benefit__text Для соблюдения всех правовых норм РФ
-          .benefit__item 
+          .benefit__item(data-aos="fade-up")
             .row 
               .col-md-6 
                 h3.benefit__title Документооборот
               .col-md-6 
                 p.benefit__text Решает задачу подписания и хранения документов. Больше не нужно хранить тонны бумажных архивов
-          .benefit__item 
+          .benefit__item(data-aos="fade-up")
             .row 
               .col-md-6 
                 h3.benefit__title Бухгалтерия
               .col-md-6 
                 p.benefit__text Автоматизированное создание проводок по типовым кооперативным операциям
-          .benefit__item 
+          .benefit__item(data-aos="fade-up")
             .row 
               .col-md-6 
                 h3.benefit__title Взаиморасчеты
@@ -248,12 +248,12 @@ block content
       section.news
         .container 
           .news__head 
-            h2.news__title Новости:
-            a(href="#").news__more Все новости
+            h2.news__title(data-aos="fade-right") Новости:
+            a(href="#").news__more(data-aos="fade-left") Все новости
           .news__items 
             .row.gy-2
               .col-sm-6.col-lg-4
-                .news__item 
+                .news__item(data-aos="fade-up")
                   a(href="#").news__img 
                     img(src="img/news/img1.jpg", alt="")
                   .news__date 01 декабря 2022 года
@@ -263,7 +263,7 @@ block content
                   .news__btn 
                     a(href="#").btn.btn--white-border подробнее
               .col-sm-6.col-lg-4
-                .news__item 
+                .news__item(data-aos="fade-up")
                   a(href="#").news__img 
                     img(src="img/news/img2.jpg", alt="")
                   .news__date 01 декабря 2022 года
@@ -273,7 +273,7 @@ block content
                   .news__btn 
                     a(href="#").btn.btn--white-border подробнее
               .col-sm-6.col-lg-4
-                .news__item 
+                .news__item(data-aos="fade-up")
                   a(href="#").news__img 
                     img(src="img/news/img3.jpg", alt="")
                   .news__date 01 декабря 2022 года

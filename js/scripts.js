@@ -353,4 +353,10 @@ window.onload = function () {
   dropBlock($('.js-drop-btn'));
   dropBlock($('.js-drop-menu'), true);
 
+  // AOS || Анимация появления блоков
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+
 }
