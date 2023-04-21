@@ -58,6 +58,7 @@
     font-weight: bold;
     margin-bottom: 24px;
     a {
+      display: block;
       color: #fff;
       transition: 0.2s;
       @include media-breakpoint-up(md) {

@@ -33,6 +33,7 @@
     line-height: 30px;
     margin-bottom: 40px;
     a {
+      display: block;
       color: $text_color;
       @include media-breakpoint-up(md) {
         &:hover {

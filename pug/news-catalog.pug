@@ -1,0 +1,72 @@
+extends core/base.pug
+
+block title 
+  title Новости
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs
+        .container 
+          ul 
+            li 
+              a(href="home.html") Главная
+            li 
+              span Новости
+      // /breadcrumbs
+
+      // news-catalog
+      .news-catalog.news-catalog--mb60 
+        .container 
+          h1.title Новости
+          .news-catalog__items 
+            .row 
+              .col-lg-4.col-sm-6
+                mixin news-catalog(imgUrl, title, text)
+                  .news-catalog__item 
+                    a.news-catalog__img(href="#") 
+                      img(src= imgUrl, alt="")
+                    .news-catalog__date 01 декабря 2022 года
+                    h3.news-catalog__subtitle 
+                      a(href="#")= title
+                    p.news-catalog__text= text
+                    .news-catalog__btn 
+                      a.btn.btn--green-border(href="#") подробнее
+                +news-catalog('img/news/img1.jpg', 'Сублимированный анализ зарубежного опыта', 'Рекламный блок, суммируя приведенные примеры, недостаточно специфицирует фирменный фирменный стиль. ')
+              .col-lg-4.col-sm-6
+                +news-catalog('img/news/img2.jpg', 'Почему недостижимо привлечение аудитории?', 'Потребление стабилизирует conversion rate. Дело в том, что имидж пока плохо обуславливает популярный нестандартный подход.')
+              .col-lg-4.col-sm-6
+                +news-catalog('img/news/img3.jpg', 'Комплексный фирменный стиль — актуальная национальная задача', 'Взаимодействие корпорации и клиента отталкивает побочный PR-эффект.')
+              .col-lg-4.col-sm-6
+                +news-catalog('img/news/img4.jpg', 'Сублимированный анализ зарубежного опыта', 'Рекламный блок, суммируя приведенные примеры, недостаточно специфицирует фирменный фирменный стиль. ')
+              .col-lg-4.col-sm-6
+                +news-catalog('img/news/img5.jpg', 'Почему недостижимо привлечение аудитории?', 'Потребление стабилизирует conversion rate. Дело в том, что имидж пока плохо обуславливает популярный нестандартный подход.')
+              .col-lg-4.col-sm-6
+                +news-catalog('img/news/img6.jpg', 'Комплексный фирменный стиль — актуальная национальная задача', 'Взаимодействие корпорации и клиента отталкивает побочный PR-эффект.')
+              .col-lg-4.col-sm-6
+                +news-catalog('img/news/img7.jpg', 'Сублимированный анализ зарубежного опыта', 'Рекламный блок, суммируя приведенные примеры, недостаточно специфицирует фирменный фирменный стиль. ')
+              .col-lg-4.col-sm-6
+                +news-catalog('img/news/img8.jpg', 'Почему недостижимо привлечение аудитории?', 'Потребление стабилизирует conversion rate. Дело в том, что имидж пока плохо обуславливает популярный нестандартный подход.')
+              .col-lg-4.col-sm-6
+                +news-catalog('img/news/img9.jpg', 'Комплексный фирменный стиль — актуальная национальная задача', 'Взаимодействие корпорации и клиента отталкивает побочный PR-эффект.')
+      // /news-catalog
+
+      // pagination
+      .pagination
+        .container 
+          ul 
+            li 
+              span 01
+            li 
+              a(href="#") 02
+            li 
+              a(href="#") 03
+      // /pagination
+
+    include core/footer.pug

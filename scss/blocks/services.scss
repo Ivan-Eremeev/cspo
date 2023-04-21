@@ -74,6 +74,7 @@
     margin-bottom: 24px;
     text-transform: uppercase;
     a {
+      display: block;
       color: $text_color;
       transition: 0.2s;
       @include media-breakpoint-up(md) {
