@@ -5,6 +5,13 @@
     margin-bottom: 80px;
     text-transform: none;
   }
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: $primary_color;
+    margin-bottom: 48px;
+  }
   &__items {
     .row {
       margin-top: -80px;
@@ -67,6 +74,7 @@
     margin-bottom: 60px;
   }
   @include media-breakpoint-down(xl) {
+    margin-bottom: 80px;
     .title {
       margin-bottom: 60px;
     }
@@ -83,7 +91,10 @@
     }
   }
   @include media-breakpoint-down(md) {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    &--mb60 {
+      margin-bottom: 40px;
+    }
     .title {
       margin-bottom: 40px;
     }
