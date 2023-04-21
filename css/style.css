@@ -6246,6 +6246,7 @@ body.lock {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .content {
@@ -6763,8 +6764,10 @@ body.lock {
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-#headerSticky.sticky .header__nav {
-  margin-top: 15px;
+@media (min-width: 769px) {
+  #headerSticky.sticky .header__nav {
+    margin-top: 15px;
+  }
 }
 
 @-webkit-keyframes showStyky {

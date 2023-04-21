@@ -207,7 +207,9 @@
     animation: showStyky 0.5s;
     box-shadow: 0 0 20px rgba(0,0,0,.3);
     .header__nav {
-      margin-top: 15px;
+      @include media-breakpoint-up(md) {
+        margin-top: 15px;
+      }
     }
   }
 }
