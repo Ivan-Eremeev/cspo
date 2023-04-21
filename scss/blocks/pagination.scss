@@ -1,11 +1,13 @@
 /* pagination */
 .pagination { 
   margin-bottom: 120px;
+  &__container {
+    padding-top: 48px;
+    border-top: 1px solid $border_color;
+  }
   ul {
     display: flex;
     margin-left: -24px;
-    padding-top: 48px;
-    border-top: 1px solid $border_color;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
@@ -39,6 +41,31 @@
         background-color: $secondary_color;
         color: #fff;
         border-radius: 4px;
+      }
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 80px;
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 60px;
+    &__container {
+      padding-top: 30px;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-left: -15px;
+      li {
+        margin-left: 15px;
+        a {
+          width: 50px;
+          height: 50px;
+        }
+        span {
+          width: 50px;
+          height: 50px;
+        }
       }
     }
   }

@@ -36,5 +36,8 @@
       }
     }
   }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 5px;
+  }
 }
 /* /breadcrumbs */

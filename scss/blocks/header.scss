@@ -199,13 +199,16 @@
 // stiky menu
 #headerSticky {
   &.sticky {
-    padding: 10px 0 20px;
+    padding: 10px 0 10px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     animation: showStyky 0.5s;
     box-shadow: 0 0 20px rgba(0,0,0,.3);
+    @include media-breakpoint-up(md) {
+      padding-bottom: 20px;
+    }
     .header__nav {
       @include media-breakpoint-up(md) {
         margin-top: 15px;

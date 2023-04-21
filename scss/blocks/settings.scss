@@ -81,4 +81,10 @@ body {
     }
   }
 }
+.container {
+  @include media-breakpoint-down(sm) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 /* /settings */
