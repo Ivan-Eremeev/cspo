@@ -45,6 +45,7 @@
     
   }
   @include media-breakpoint-down(xl) {
+    margin-bottom: 80px;
     .title {
       margin-bottom: 60px;
     }
@@ -63,6 +64,7 @@
     }
   }
   @include media-breakpoint-down(md) {
+    margin-bottom: 60px;
     .title {
       margin-bottom: 40px;
     }

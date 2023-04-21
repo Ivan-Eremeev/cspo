@@ -7186,6 +7186,9 @@ body.lock {
   margin-bottom: 24px;
 }
 @media (max-width: 1199.98px) {
+  .team {
+    margin-bottom: 80px;
+  }
   .team .title {
     margin-bottom: 60px;
   }
@@ -7202,6 +7205,9 @@ body.lock {
   }
 }
 @media (max-width: 768.98px) {
+  .team {
+    margin-bottom: 60px;
+  }
   .team .title {
     margin-bottom: 40px;
   }
@@ -7597,6 +7603,9 @@ body.lock {
   }
 }
 @media (max-width: 575.98px) {
+  .services2 .title {
+    text-align: center;
+  }
   .services2__item {
     text-align: center;
   }
